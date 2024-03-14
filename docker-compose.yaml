@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  coin_eval:
+    container_name: coin_eval
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
