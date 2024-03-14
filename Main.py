@@ -14,7 +14,7 @@ async def get_CoinEvaluation():
             print(response.status_code)
     except requests.HTTPError as ERROR:
         print(f'[!] {ERROR}')
-    return response_api
+    return f"API : {response_api}"
 
 
 if __name__ == '__main__':
